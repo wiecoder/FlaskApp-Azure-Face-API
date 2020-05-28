@@ -1,0 +1,1182 @@
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="10000">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 6 AM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,6)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 7 AM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,7)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 8 AM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,8)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 9 AM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,9)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 10 AM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,10)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 11 AM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,11)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 12 AM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,12)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 1 PMy</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,13)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 2 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,14)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 3 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,15)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 4 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,16)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 5 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,17)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 6 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,18)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 7 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,19)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 8 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,20)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 9 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,21)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 10 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,22)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="carousel-item">
+        <table class="table table-hover table-dark">
+            <thead>
+               <tr class="table-active">
+                  <td colspan="4" style='text-align: center;'>Your average emotions at 11 PM</td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-warning">
+                  <th scope="col">#</th>
+                  <th scope="col">Pic</th>
+                  <th scope="col">Emotion</th>
+                  <th scope="col">Value</th>
+               </tr>
+               <tr>
+                  <th scope="row">1</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/happiness.jpg') }}"></td>
+                  <td class="pad-ico">Happiness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['happiness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">2</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/anger.jpg') }}"></td>
+                  <td class="pad-ico">Anger</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['anger'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">3</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/contempt.png') }}"></td>
+                  <td class="pad-ico">Contempt</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['contempt'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">4</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/disgust.jpg') }}"></td>
+                  <td class="pad-ico">Disgust</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['disgust'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">5</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/fear.jpg') }}"></td>
+                  <td class="pad-ico">Fear</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['fear'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">6</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/neutral.png') }}"></td>
+                  <td class="pad-ico">Neutral</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['neutral'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">7</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/sadness.jpg') }}"></td>
+                  <td class="pad-ico">Sadness</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['sadness'] }}</td>
+               </tr>
+               <tr>
+                  <th scope="row">8</th>
+                  <td> <img class="rounded-circle article-img-sm" src="{{ url_for('static',filename='emotions/surprise.png') }}"></td>
+                  <td class="pad-ico">Surprise</td>
+                  <td class="pad-ico">{{ emotion(all_blocks,23)['surprise'] }}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>

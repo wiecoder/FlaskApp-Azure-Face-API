@@ -1,0 +1,44 @@
+#container {
+	border: 1px solid #333;
+	border-radius: 20px;
+	width: 600px;
+	margin: 30px auto;
+	padding: 20px;
+	text-align: center;
+	background: #333;
+}
+
+#timer {
+	color: #fafafa;
+	font-size: 60px;
+	margin: 10px auto;
+	border: 5px solid whitesmoke;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+#time {
+	margin-top: 100px;
+	z-index: 1;
+	position: relative;
+}
+
+#filler {
+	background: #ddffcc;
+	height: 0px;
+	width: 200px;
+	position: absolute;
+	bottom: 0;
+}
+
+#pad {
+	padding-top: 20px;
+}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div id="pomodoro-app">
+        <div id="container">
+          <div id="timer">
+            <div id="time">
+              <span id="minutes">25</span>
+              <span id="colon">:</span>
+              <span id="seconds">00</span>
+            </div>
+            <div id="filler"></div>
+          </div>
+      
+          <div id="pad">
+            <button class="btn btn-outline-primary btn-lg btn-my" id="work">Work</button>
+            <button class="btn btn-outline-success btn-lg" id="shortBreak">Short Break</button>
+            <button class="btn btn-outline-warning btn-lg" id="longBreak">Long Break</button>
+            <button class="btn btn-outline-danger btn-lg" id="stop">Stop</button>
+          </div>
+        </div>
+      </div>
+{% endblock content %}

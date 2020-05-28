@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% for block in blocks.items %}
+{% if block.author == current_user %}
+<article class="media content-section ">
+  {% if best_emotion(block.output)=='happiness' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/happiness.jpg') }}">
+  {% elif  best_emotion(block.output)=='anger' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/anger.jpg') }}">
+  {% elif  best_emotion(block.output)=='contempt' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/contempt.png') }}">
+  {% elif  best_emotion(block.output)=='disgust' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/disgust.jpg') }}">
+  {% elif  best_emotion(block.output)=='fear' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/fear.jpg') }}">
+  {% elif  best_emotion(block.output)=='neutral' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/neutral.png') }}">
+  {% elif  best_emotion(block.output)=='surprise' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/surprise.png') }}">
+  {% elif  best_emotion(block.output)=='sadness' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/sadness.png') }}">
+  {% endif %}
+    <div class="media-body">
+    <div class="article-metadata">
+      <small class="text-muted">{{ block.date_posted.strftime('%Y-%m-%d %H:%M') }}</small>
+    </div>
+    <h3><a class="article-title" href="{{ url_for('block', block_id=block.id) }}" >{{ block.title }}</a></h3>
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td><strong>Dominant emotion</strong></td>
+          <td colspan="2"><em>{{ best_emotion(block.output) }}</em></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td><strong>Session length</strong></td>
+          <td colspan="2"><em>{{ block.session }} minutes</em></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert alert-dark" role="alert">
+      <p class="article-content">{{ block.content }}</p> 
+    </div>
+
+  </div>
+</article>
+{% endif %}
+{% endfor %}
+{% for page_num in blocks.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+{% if page_num %}
+  {% if blocks.page == page_num %}
+    <a class="btn btn-info mb-4" href="{{ url_for('blocks', page = page_num) }}">{{ page_num }}</a>
+  {% else %}
+    <a class="btn btn-outline-info mb-4" href="{{ url_for('blocks', page = page_num) }}">{{ page_num }}</a>
+  {% endif %}
+{% else %}
+{% endif %}
+{% endfor %}
+{% endblock content %}
+

@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if block.author == current_user %}
+<article class="media content-section ">
+  {% if best_emotion(block.output)=='happiness' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/happiness.jpg') }}">
+  {% elif  best_emotion(block.output)=='anger' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/anger.jpg') }}">
+  {% elif  best_emotion(block.output)=='contempt' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/contempt.png') }}">
+  {% elif  best_emotion(block.output)=='disgust' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/disgust.jpg') }}">
+  {% elif  best_emotion(block.output)=='fear' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/fear.jpg') }}">
+  {% elif  best_emotion(block.output)=='neutral' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/neutral.png') }}">
+  {% elif  best_emotion(block.output)=='surprise' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/surprise.png') }}">
+  {% elif  best_emotion(block.output)=='sadness' %}
+    <img class="rounded-circle article-img" src="{{ url_for('static',filename='emotions/sadness.png') }}">
+  {% endif %}
+    <div class="media-body">
+    <div class="article-metadata">
+      <button type="button" class='btn btn-danger btn-sm m-1' data-toggle='modal' data-target='#deleteModal'>Delete</button>
+      <small class="text-muted">{{ block.date_posted.strftime('%Y-%m-%d %H:%M') }}</small>
+    </div>
+    <h3><a class="article-title" href="{{ url_for('block', block_id=block.id) }}" >{{ block.title }}</a></h3>
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td><strong>Dominant emotion</strong></td>
+          <td colspan="2"><em>{{ best_emotion(block.output) }}</em></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td><strong>Session length</strong></td>
+          <td colspan="2"><em>{{ block.session }} minutes</em></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert alert-dark" role="alert">
+      <p class="article-content">{{ block.content }}</p> 
+  </div>
+</article>
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModalLabel">Are you sure you want to delete your post?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <form action="{{ url_for('delete_block', block_id=block.id) }}" method="POST">
+            <input class="btn btn-danger" type="submit" value="Delete">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% endblock content %}
