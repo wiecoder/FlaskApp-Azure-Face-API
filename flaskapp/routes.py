@@ -156,10 +156,10 @@ def user_posts(username):
     return render_template('user_posts.html',posts=posts, user=user)
 
 ### FACE API
-subscription_key = 'c5a2dd0e0f474af294c630bb8a463176'
+subscription_key = 'YOUR_FACE_API_KEY_FROM_AZURE'
 assert subscription_key
 
-face_api_url = 'https://ailionsfaceapi.cognitiveservices.azure.com/face/v1.0/detect'
+face_api_url = 'YOUR_URL_FROM_AZURE'
 
 headers = {
     'Content-Type': 'application/octet-stream',
